@@ -1,21 +1,12 @@
 #container {
   display: flex;
-  flex-wrap: wrap;
-
-  justify-content: space-between;
-  align-items: center;
-  border: 2px solid black;
-}
-
-body {
-  background-color: aqua;
+  flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  justify-content: center; /* Center the grid horizontally */
 }
 
 #container div {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  text-align: center;
-  padding: 20px;
-  width: calc(25% - 10px); /* 25% width minus gap adjustment */
-  box-sizing: border-box; /* Include padding and border in the width */
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  flex: 0 0 calc((100% - 75px) / 16); /* Adjust this value to control size */
+  aspect-ratio: 1 / 1; /* Maintains perfect squares */
 }
