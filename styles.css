@@ -1,12 +1,12 @@
 #container {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  flex-wrap: wrap;
   justify-content: center; /* Center the grid horizontally */
 }
 
 #container div {
   box-sizing: border-box;
   border: 1px solid #000000;
-  flex: 0 0 calc((100% - 75px) / 16); /* Adjust this value to control size */
+  flex: 0 0 calc((100% - 75px) / 16);
   aspect-ratio: 1 / 1; /* Maintains perfect squares */
 }

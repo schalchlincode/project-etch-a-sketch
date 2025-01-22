@@ -6,6 +6,10 @@ function addDiv() {
 
     newDiv.textContent = "";
 
+    newDiv.addEventListener("mouseover", () => {
+      newDiv.style.background = "lightblue";
+    });
+
     container.appendChild(newDiv);
   }
 }
