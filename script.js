@@ -1,3 +1,12 @@
+const button = document.getElementById("btn");
+
+function btnPrompt() {
+  button.addEventListener("click", () => {
+    prompt("Grid size");
+  });
+}
+btnPrompt();
+
 const container = document.getElementById("container");
 
 function addDiv() {

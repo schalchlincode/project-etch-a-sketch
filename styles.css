@@ -1,12 +1,14 @@
 #container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center the grid horizontally */
+  flex-wrap: wrap; /* Allows wrapping to the next row */
+  width: 640px; /* Total width of the grid (adjust as needed) */
+  height: 640px; /* Total height of the grid */
+  border: 1px solid black; /* Optional: To visualize the grid container */
 }
 
 #container div {
-  box-sizing: border-box;
-  border: 1px solid #000000;
-  flex: 0 0 calc((100% - 75px) / 16);
-  aspect-ratio: 1 / 1; /* Maintains perfect squares */
+  flex: 0 0 calc(100% / 16); /* Each item takes 1/16th of the container's width */
+  aspect-ratio: 1; /* Ensures squares by keeping width and height equal */
+  box-sizing: border-box; /* Includes padding and borders in width/height */
+  border: 1px solid #ddd; /* Optional: To visualize grid items */
 }
