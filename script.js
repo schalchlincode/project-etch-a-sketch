@@ -1,8 +1,9 @@
 const button = document.getElementById("btn");
-
+let userInput = 16;
 function btnPrompt() {
   button.addEventListener("click", () => {
-    prompt("Grid size");
+    userInput = prompt("Grid size");
+    console.log(userInput);
   });
 }
 btnPrompt();
