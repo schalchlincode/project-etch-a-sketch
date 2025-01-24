@@ -31,6 +31,7 @@ function clearGrid() {
 
   clearGrid.addEventListener("click", () => {
     container.innerHTML = "";
+    container.style.border = "none";
   });
 }
 clearGrid();
