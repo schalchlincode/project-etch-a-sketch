@@ -1,5 +1,5 @@
 const button = document.getElementById("btn");
-let userInput = 16;
+let userInput = "";
 function btnPrompt() {
   button.addEventListener("click", () => {
     userInput = prompt("Grid size");
@@ -25,3 +25,12 @@ function addDiv() {
 }
 
 addDiv();
+
+function clearGrid() {
+  const clearGrid = document.getElementById("clearGridBtn");
+
+  clearGrid.addEventListener("click", () => {
+    container.innerHTML = "";
+  });
+}
+clearGrid();
